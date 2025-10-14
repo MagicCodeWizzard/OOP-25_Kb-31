@@ -15,12 +15,12 @@ public class Employee {
 
     private boolean isCreated;
 
-    public Employee()
-    {
-        productsSold = new LinkedList<>();
-
-        System.out.println("<<construct>> Employee");
-    }
+//    public Employee()
+//    {
+//        productsSold = new LinkedList<>();
+//
+//        System.out.println("<<construct>> Employee");
+//    }
 
 
     public Employee(int productCount){
@@ -31,5 +31,36 @@ public class Employee {
         }
 
         System.out.println("<<construct>> Employee(int productCount)");
+    }
+
+    public boolean workshiftStart(LocalDateTime time)
+    {
+        System.out.println("Зміну розпочато об " + time);
+        return true;
+    }
+
+    public boolean workshiftEnd(LocalDateTime time)
+    {
+        System.out.println("Зміну завершено об " + time);
+        return true;
+    }
+
+    private String countSalary()
+    {
+        return String.format("%.2f", salary);
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", title='" + title + '\'' +
+                ", salary=" + salary +
+                ", experience=" + experience +
+                ", hireDate=" + hireDate +
+                ", productsSold=" + productsSold +
+                ", isCreated=" + isCreated +
+                '}';
     }
 }
