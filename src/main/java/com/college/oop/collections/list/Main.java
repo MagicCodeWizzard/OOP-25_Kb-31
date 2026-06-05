@@ -1,4 +1,4 @@
-package com.college.oop.collections;
+package com.college.oop.collections.list;
 
 import java.util.LinkedList;
 import java.util.Scanner;

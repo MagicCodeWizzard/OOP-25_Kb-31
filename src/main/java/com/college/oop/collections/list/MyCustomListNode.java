@@ -1,4 +1,4 @@
-package com.college.oop.collections;
+package com.college.oop.collections.list;
 
 public class MyCustomListNode {
     private double value;
